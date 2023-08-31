@@ -27,7 +27,7 @@ Copy `WavefrontOBJ.h`, `WavefrontMTL.h` and `WavefrontMTL.cpp` to your project a
 ```
 
 ### Parsed examples
-*Wavefront98 have been integrated into the [Polyscope 3D viewer](https://github.com/nmwsharp/polyscope), showcasing their parsing capabilities.*
+*Wavefront98 have been integrated into the [Polyscope 3D viewer](https://github.com/nmwsharp/polyscope), showcasing the parsing capabilities.*
 
 ![Polyscope](https://github.com/StefanJohnsen/WavefrontOBJ/blob/main/Pictures/polyscope.jpg)
 *[3D model Mars Perseverance Rover](https://mars.nasa.gov/resources/25042/mars-perseverance-rover-3d-model/),  from NASA's Jet Propulsion Laboratory*
