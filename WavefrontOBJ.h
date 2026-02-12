@@ -22,9 +22,7 @@
   contacting the author at stefan.johnsen@outlook.com
  */
 
-#ifndef _CRT_SECURE_NO_WARNINGS
-#define _CRT_SECURE_NO_WARNINGS
-#endif 
+#pragma once
 
 #ifndef WAVEFRONT_OBJ
 #define WAVEFRONT_OBJ
@@ -190,6 +188,11 @@ namespace obj
 
 	inline Load::~Load() { close(); }
 
+#if defined(_MSC_VER)
+#pragma warning(push)
+#pragma warning(disable:4996) // fopen is deprecated for MSVC, but its fast and OS independent
+#endif
+
 	inline bool Load::open(const std::string& open_path)
 	{
 		close();
@@ -204,6 +207,10 @@ namespace obj
 
 		return false;
 	}
+
+#if defined(_MSC_VER)
+#pragma warning(pop)
+#endif
 
 	inline void Load::clear()
 	{
